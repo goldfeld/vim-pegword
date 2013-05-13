@@ -11,7 +11,7 @@ let s:pegwords = {
   \ 'nose': 20, 'nut': 21, 'nun': 22, 'gnome': 23, 'nero': 24,
    \ 'nail': 25, 'niche': 26, 'neck': 27, 'knife': 28, 'nib': 29,
   \ 'mace': 30, 'mat': 31, 'moon': 32, 'mummy': 33, 'mower': 34,
-   \ 'mail': 35, 'match': 36, 'mac': 37, 'movie': 38, 'map': 39,
+   \ 'mail': 35, 'match': 36, 'mug': 37, 'movie': 38, 'map': 39,
   \ 'rose': 40, 'rat': 41, 'rein': 42, 'rum': 43, 'rower': 44,
    \ 'reel': 45, 'roach': 46, 'rogue': 47, 'reef': 48, 'rabbi': 49,
   \ 'lasso': 50, 'LED': 51, 'lion': 52, 'llama': 53, 'lyre': 54,
