@@ -32,10 +32,10 @@ if exists('g:loaded_pegword') || &cp
 endif
 let g:loaded_pegword = 1
 
-command! -nargs=0 Pegword call pegwork#begin()
+command! -nargs=? Pegword call pegwork#begin(<f-args>)
 
 if get(g:, 'pegword_remap_digits', 1)
-  for digit in range(0, 9)
-    execute "inoremap <silent>" digit "<Esc>:call pegwork#begin()<CR>"
+  for dgt in range(0, 9)
+    execute "inoremap <silent>" dgt "<Esc>:call pegwork#begin(" . dgt . ")<CR>"
   endfor
 endif

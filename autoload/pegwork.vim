@@ -35,18 +35,35 @@ for peg in keys(s:pegwords)
   endif
 endfor
 
-function! pegwork#begin()
-  let word = ''
-  let char = getchar()
-  while l:char != 27 && len(l:word) < s:maxLength
-    let word = l:word . nr2char(l:char)
-    let number = get(s:pegwords, l:word, -1)
-    if l:number != -1
-      execute "normal! a" . l:number
-      startinsert
-      call cursor('.', getpos('.')[2] + 1)
-      return
-    endif
-    let l:char = getchar()
-  endwhile
+function! pegwork#begin(...)
+  let times = 1
+  if a:0 == 1 | let l:times = a:1 | endif
+
+  for iteration in range(l:times)
+    let word = ''
+    let char = getchar()
+
+    while len(l:word) < s:maxLength
+      if l:char == 27
+        startinsert
+        return
+      endif
+
+      if l:char < 97 || l:char > 122
+        let l:char = getchar()
+        continue
+      endif
+
+      let word = l:word . nr2char(l:char)
+      let number = get(s:pegwords, l:word, -1)
+      if l:number != -1
+        execute "normal! a" . l:number
+        startinsert
+        call cursor('.', getpos('.')[2] + 1)
+        break
+      endif
+      let l:char = getchar()
+    endwhile
+
+  endfor
 endfunction
