@@ -69,3 +69,9 @@ function! pegwork#begin(...)
 
   endfor
 endfunction
+
+function! pegwork#float(...)
+  call pegwork#begin(1)
+  execute "normal! i.\<Esc>"
+  call cursor('.', getpos('.')[2] + 2)
+endfunction

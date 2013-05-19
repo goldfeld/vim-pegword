@@ -35,7 +35,8 @@ let g:loaded_pegword = 1
 command! -nargs=? Pegword call pegwork#begin(<f-args>)
 
 if get(g:, 'pegword_remap_digits', 1)
-  for dgt in range(0, 9)
+  inoremap <silent> 0 <Esc>:call pegwork#float()<CR>
+  for dgt in range(1, 9)
     execute "inoremap <silent>" dgt "<Esc>:call pegwork#begin(" . dgt . ")<CR>"
   endfor
 endif
