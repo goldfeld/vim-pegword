@@ -1,4 +1,4 @@
-# Peg word memorization aid for Vim
+## Peg word memorization aid for Vim
 
 Peg words are a mnemonic system where you associate each number to a short word, and then use these words to form stories when memorizing sequences of numbers. This plugin has a peg dictionary for numbers 0 through 99. The number 7, for instance, is represented by the sound of `k`, so the peg word for 7 is 'key', and for 77 is 'cake'. The sounds are compounded in this way to form all the peg words.  
 
