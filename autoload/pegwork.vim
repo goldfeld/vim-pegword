@@ -24,6 +24,8 @@ let s:pegwords = {
    \ 'vial': 85, 'fish': 86, 'fig': 87, 'fifa': 88, 'vip': 89,
   \ 'bus': 90, 'bat': 91, 'bone': 92, 'beam': 93, 'pear': 94,
    \ 'bull': 95, 'patch': 96, 'bike': 97, 'beef': 98, 'pipe': 99,
+  \ 'seesaw': '00', 'suit': '01', 'sun': '02', 'sumo': '03', 'sir': '04',
+  \ 'seal': '05', 'sash': '06', 'sock': '07', 'safe': '08', 'soup': '09'
   \ }
 " peg word dictionary adapted from:
 " http://memoryskills.blogspot.com.br/2009/07/my-list-of-100-peg-words.html
