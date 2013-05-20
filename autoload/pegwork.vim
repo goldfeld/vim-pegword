@@ -61,13 +61,13 @@ function! pegwork#begin(...)
       if l:number != -1
         execute "normal! a" . l:number
         startinsert
-        call cursor('.', getpos('.')[2] + 1)
         break
       endif
       let l:char = getchar()
     endwhile
 
   endfor
+  call cursor('.', getpos('.')[2] + 1)
 endfunction
 
 function! pegwork#float(...)
