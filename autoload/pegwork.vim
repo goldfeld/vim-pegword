@@ -19,7 +19,7 @@ let s:pegwords = {
   \ 'cheese': 60, 'sheet': 61, 'chain': 62, 'chime': 63, 'chair': 64,
    \ 'cello': 65, 'shush': 66, 'shake': 67, 'chef': 68, 'ship': 69,
   \ 'case': 70, 'cat': 71, 'can': 72, 'comb': 73, 'car': 74,
-   \ 'coil': 75, 'couch': 76, 'cake': 77, 'coffee': 78, 'cap': 79,
+   \ 'coil': 75, 'couch': 76, 'cake': 77, 'cave': 78, 'cap': 79,
   \ 'vase': 80, 'foot': 81, 'vine': 82, 'foam': 83, 'fire': 84,
    \ 'vial': 85, 'fish': 86, 'fig': 87, 'fifa': 88, 'vip': 89,
   \ 'bus': 90, 'bat': 91, 'bone': 92, 'beam': 93, 'pear': 94,
