@@ -43,15 +43,41 @@ function! pegwork#begin(...)
 
   for iteration in range(l:times)
     let word = ''
+    let hint = ''
     let char = getchar()
 
     while len(l:word) < s:maxLength
-      if l:char == 27
-        startinsert
-        return
-      endif
-
       if l:char < 97 || l:char > 122
+        " if esc is pressed, end minor mode.
+        if l:char == 27
+          return
+
+        " if it's a number, save it in case the person is trying to get hinted;
+        " but don't add it to the word building.
+        elseif l:char >= 48 && l:char <= 57
+          let l:hint = l:hint . nr2char(l:char)
+
+        " if the user presses enter, give him the hint and end minor mode.
+        elseif l:char == 13
+          if len(l:hint)
+            for word in keys(s:pegwords)
+              if s:pegwords[word] == l:hint
+                let rev = 1
+                while l:char != 27 && l:rev <= len(word)
+                  let l:reveal = strpart(word, 0, l:rev)
+                  echom l:reveal
+
+                  let l:rev = l:rev + 1
+                  let l:char = getchar()
+                endwhile
+                return
+              endif
+
+            endfor
+          endif
+          return
+        endif
+
         let l:char = getchar()
         continue
       endif
