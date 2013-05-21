@@ -9,7 +9,7 @@ let s:pegwords = {
   \ 'toes': 10, 'tot': 11, 'dune': 12, 'dam': 13, 'tyre': 14,
    \ 'towel': 15, 'tissue': 16, 'duck': 17, 'dove': 18, 'tap': 19,
   \ 'nose': 20, 'nut': 21, 'nun': 22, 'gnome': 23, 'nero': 24,
-   \ 'nail': 25, 'niche': 26, 'neck': 27, 'knife': 28, 'nib': 29,
+   \ 'nail': 25, 'niche': 26, 'nuke': 27, 'knife': 28, 'nib': 29,
   \ 'mace': 30, 'mead': 31, 'moon': 32, 'mummy': 33, 'mower': 34,
    \ 'mail': 35, 'match': 36, 'mug': 37, 'movie': 38, 'map': 39,
   \ 'rose': 40, 'root': 41, 'rein': 42, 'rum': 43, 'rower': 44,
