@@ -4,17 +4,12 @@
 "" =============================================================================
 
 let s:pegwords = {
-  " Neo from Matrix; Moe from The Simpsons; Ra the Egyptian God.
   \ 'saw': 0, 'tie': 1, 'neo': 2, 'moe': 3, 'ra': 4,
    \ 'law': 5, 'shoe': 6, 'key': 7, 'ivy': 8, 'pie': 9,
-  " Tot is a small child.
   \ 'toes': 10, 'tot': 11, 'dune': 12, 'dam': 13, 'tire': 14,
    \ 'towel': 15, 'tissue': 16, 'duck': 17, 'dove': 18, 'tap': 19,
-  " Nemo the fish (or Captain Nemo); Nero the Roman Emperor.
   \ 'nose': 20, 'nut': 21, 'nun': 22, 'nemo': 23, 'nero': 24,
-  " Nib is the tip of quill pen.
    \ 'nail': 25, 'niche': 26, 'nuke': 27, 'knife': 28, 'nib': 29,
-  " Mead is a classic alcoholic beverage made from honey; Egyptian mummy.
   \ 'mace': 30, 'mead': 31, 'moon': 32, 'mummy': 33, 'mower': 34,
    \ 'mail': 35, 'match': 36, 'mug': 37, 'movie': 38, 'map': 39,
   \ 'rice': 40, 'root': 41, 'rein': 42, 'rum': 43, 'rower': 44,
@@ -26,14 +21,19 @@ let s:pegwords = {
   \ 'case': 70, 'cat': 71, 'can': 72, 'comb': 73, 'car': 74,
    \ 'coil': 75, 'couch': 76, 'cake': 77, 'cave': 78, 'cap': 79,
   \ 'vase': 80, 'foot': 81, 'vine': 82, 'foam': 83, 'fire': 84,
-  " FIFA the Soccer Organization; VIP, an important hostage or guest.
    \ 'vial': 85, 'fish': 86, 'fig': 87, 'fifa': 88, 'vip': 89,
   \ 'bus': 90, 'bat': 91, 'bone': 92, 'beam': 93, 'pear': 94,
    \ 'bull': 95, 'patch': 96, 'bike': 97, 'beef': 98, 'pipe': 99,
-  " Sir, a Knight or someone like Newton.
   \ 'seesaw': '00', 'suit': '01', 'sun': '02', 'sumo': '03', 'sir': '04',
-  \ 'seal': '05', 'sash': '06', 'sock': '07', 'safe': '08', 'soup': '09'
+   \ 'seal': '05', 'sash': '06', 'sock': '07', 'safe': '08', 'soup': '09'
   \ }
+  " Neo from Matrix; Moe from The Simpsons; Ra the Egyptian God.
+  " Tot is a small child.
+  " Nemo the fish (or Captain Nemo); Nero the Roman Emperor.
+  " Nib is the tip of quill pen.
+  " Mead is a classic alcoholic beverage made from honey; Egyptian mummy.
+  " FIFA the Soccer Organization; VIP, an important hostage or guest.
+  " Sir, a knight or e.g. Newton.
 " peg word dictionary adapted from:
 " http://memoryskills.blogspot.com.br/2009/07/my-list-of-100-peg-words.html
 
