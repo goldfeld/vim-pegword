@@ -24,7 +24,7 @@ let s:pegwords = {
    \ 'vial': 85, 'fish': 86, 'fig': 87, 'fifa': 88, 'vip': 89,
   \ 'bus': 90, 'bat': 91, 'bone': 92, 'beam': 93, 'pear': 94,
    \ 'bull': 95, 'patch': 96, 'bike': 97, 'beef': 98, 'pipe': 99,
-  \ 'sauce': '00', 'suit': '01', 'sun': '02', 'sumo': '03', 'sir': '04',
+  \ 'sauce': '00', 'suit': '01', 'sun': '02', 'sumo': '03', 'sewer': '04',
    \ 'seal': '05', 'sash': '06', 'sock': '07', 'safe': '08', 'soup': '09'
   \ }
   " Neo from Matrix; Moe from The Simpsons; Ra the Egyptian God.
